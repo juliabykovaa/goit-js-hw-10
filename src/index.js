@@ -35,7 +35,8 @@ function handleInput(e) {
                 clearResults()
                 renderCountryCard(countries[0]);
             } else {
-                clearResults();
+                clearResults()
+                noResults();
             }
         })
         .catch(error => {

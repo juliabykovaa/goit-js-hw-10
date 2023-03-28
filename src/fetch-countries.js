@@ -7,7 +7,7 @@ export const fetchCountries = countryName => fetch(
 
                 return response.json();
             }
-        ).then(data => {
-            const filteredData = data.filter(country => country.name.common !== 'Russia' && country.name.common !== 'Belarus');
-            return filteredData;
-  });
+            ).then(data => {
+                const filteredData = data.filter(country => country.name.common !== 'Russia' && country.name.common !== 'Belarus');
+                return filteredData;
+            });
